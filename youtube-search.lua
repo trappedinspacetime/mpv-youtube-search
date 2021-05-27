@@ -1695,7 +1695,7 @@ local function search()
             if count > 1 then
                 msg.verbose("triggering gallery-view")
                 mp.unobserve_property(trigger_gallery)
-                mp.commandv("script-message", "gallery-view", "true")
+                mp.commandv("script-message", "playlist-view-toggle")
             end
         end
         mp.observe_property("playlist-count", "number", trigger_gallery)
